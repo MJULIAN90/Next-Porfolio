@@ -1,0 +1,33 @@
+.overflow {
+  height: 60%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overflow .card-img-top {
+  transform: scale(1);
+  transition: all 0.2s ease-in-out;
+  height: 100%;
+  width: 100%;
+}
+
+.card-body .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.overflow .card-img-top:hover {
+  transform: scale(1.2);
+}
+
+#nprogress .bar {
+  background: white !important;
+}
+
+#nprogress .spinner-icon {
+  border-top-color: white;
+  border-left-color: #c52828;
+}

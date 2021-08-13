@@ -19,6 +19,16 @@
       "static/chunks/main.js",
       "static/chunks/pages/index.js"
     ],
+    "/Github": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/Github.js"
+    ],
+    "/MisTecnologias": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/MisTecnologias.js"
+    ],
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",

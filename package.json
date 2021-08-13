@@ -18,8 +18,9 @@
   },
   "homepage": "https://github.com/MJULIAN90/Next-Porfolio-Practic#readme",
   "dependencies": {
-    "bootswatch": "^5.1.0",
+    "bootswatch": "4.6.0",
     "next": "^11.0.1",
+    "nprogress": "^0.2.0",
     "react": "^17.0.2"
   }
 }

@@ -16,6 +16,8 @@ const index = () => {
     { skill: "Next Js", percentage: 75 },
     { skill: "GitHub", percentage: 80 },
     { skill: "PostgreSQL", percentage: 80 },
+    { skill: "React Native", percentage: 70 },
+    { skill: "Type Scritp", percentage: 70 },
   ];
 
   const proyectos = [
@@ -23,7 +25,7 @@ const index = () => {
       nombre: "ROCKETXENCHANGE",
       description:
         "Muestra las temperaturas de ciudades y paises que introduzcamos en la busqueda",
-      image: "/rocket.png",
+      image: "/rocket.jpeg",
       url: "",
     },
     {
@@ -51,8 +53,8 @@ const index = () => {
                 <img src="/perfil.jpeg" alt="" className="img-fluid" />
               </div>
               <div className="col-md-9">
-                <h1>Julian Ruiz</h1>
-                <h3>FullStack Developer</h3>
+                <h1>Martin Julian Ruiz V.</h1>
+                <h5>FullStack Developer - Tecnólogo en telecomunicaciones</h5>
                 <p>
                   Saludos !!! Soy desarrollador Full Stack y Tecnólogo en
                   telecomunicaciones con interés de combinar los conocimientos
@@ -67,7 +69,14 @@ const index = () => {
                   Supabase | Next JS.
                 </p>
                 <p>
-                  falta agregar iconos de github , linklin , whatsapp, email
+                  <div className="text-center mt-5">
+                    <a
+                      href="https://www.linkedin.com/in/julian-ruiz-v/"
+                      target="_blank"
+                    >
+                      CONOCE MAS
+                    </a>
+                  </div>
                 </p>
               </div>
             </div>
@@ -92,14 +101,6 @@ const index = () => {
                   </div>
                 </div>
               ))}
-              <div className="text-center py-3">
-                <a
-                  href="https://www.linkedin.com/in/julian-ruiz-v/"
-                  target="_blank"
-                >
-                  CONOCE MAS
-                </a>
-              </div>
             </div>
           </div>
         </div>
@@ -109,11 +110,8 @@ const index = () => {
               <h1> Formación académica </h1>
               <ul>
                 <li>
-                  <h3>Henry</h3>
-                  <div style={{ fontSize: "0.9rem;" }}>
-                    {" "}
-                    Full Stack Developer JavaScript (2021)
-                  </div>
+                  <h3 className="py-3">Henry</h3>
+                  <h5> Full Stack Developer JavaScript (2021)</h5>
                   <ul>
                     <li>
                       Desarrollador de aplicaciones web front end (React, Css,
@@ -127,11 +125,8 @@ const index = () => {
                   </ul>
                 </li>
                 <li>
-                  <h3> INSTITUCION UNIVERSITARIA ITM </h3>
-                  <div style={{ fontSize: "0.9rem;" }}>
-                    {" "}
-                    Tecnólogo en telecomunicaciones (2008-2011)
-                  </div>
+                  <h3 className="py-2"> INSTITUCION UNIVERSITARIA ITM </h3>
+                  <h5>{"Tecnólogo en telecomunicaciones (2008-2011) "}</h5>
 
                   <ul>
                     <li>
@@ -146,10 +141,8 @@ const index = () => {
                   </ul>
                 </li>
                 <li>
-                  <h3> UDEMY </h3>
-                  <div style={{ fontSize: "0.9rem;" }}>
-                    React native (En curso)
-                  </div>
+                  <h3 className="py-2"> UDEMY </h3>
+                  <h5>React native & TypeScript (En curso)</h5>
                   <ul>
                     <li>
                       Creación de apps para dispositivos móviles iOS & ANDROID.
@@ -161,29 +154,24 @@ const index = () => {
           </div>
         </div>
       </div>
-      <div className="row">
+      <div className="row py-4">
         <div className="col-md-12">
           <div className="card card-body bg-dark">
             <div className="row">
               <div className="col-md-12">
-                <h1 className="text-center text-light"></h1>
+                <h1 className="text-center text-light"> Mis Proyectos</h1>
               </div>
               {proyectos.map(({ nombre, description, url, image }, index) => (
                 <div className="col-md-4 p-2" key={index}>
                   <div className="card h-100 ">
-                    <div>
-                      <img
-                        src={image}
-                        alt="error"
-                        style={{ width: "80%", height: "100%" }}
-                      />
+                    <div className="overflow">
+                      <img className="card-img-top" src={image} alt="error" />
                     </div>
                     <div className="card-body">
                       <h4>{nombre} </h4>
                       <p>{description} </p>
                       <a href={url} target="_blank">
-                        {" "}
-                        Detalles
+                        {"Ver mas"}
                       </a>
                     </div>
                   </div>
